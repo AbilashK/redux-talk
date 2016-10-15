@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>All about Redux! - Abilash K</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>Redux<br/>
+					<img src="images/logo.png" style="height:35%;width:35%"/><br/>
+				</section>
+
+				<section>
+					<u>What is it anyway?</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">
+						Redux is a predictable state container for JavaScript apps.
+					</span>
+					<br/>
+					<span class="fragment fade-in">
+						<pre>
+							<code data-trim>
+								import { createStore } from 'redux'
+							</code>
+						</pre>
+					</span>
+				</section>
+
+				<section>
+					<u>Redux is</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">A Flux Implementation</span><br/>
+					<span class="fragment fade-in">A State Manager</span><br/>
+					<span class="fragment fade-in">A Gone wrong experiment</span><br/>
+				</section>
+
+				<section>
+					<u>Three Principles</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">Single source of truth</span><br/>
+					<span class="fragment fade-in">State is read-only</span><br/>
+					<span class="fragment fade-in">Changes are made with pure functions</span><br/>
+				</section>
+
+				<section>
+					<u>What does it have?</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">Actions</span><br/>
+					<span class="fragment fade-in">Reducers</span><br/>
+					<span class="fragment fade-in">Store</span><br/>
+				</section>
+
+				<section>
+					<u>Redux can be used with</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">React</span><br/>
+					<span class="fragment fade-in">Angular 1 & 2</span><br/>
+					<span class="fragment fade-in">Backbone</span><br/>
+					<span class="fragment fade-in">Falcor</span><br/>
+					<span class="fragment fade-in">Deku</span><br/>
+				</section>
+
+				<section>
+					<u>But it doesn't end there...</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">Redux DevTools</span><br/>
+					<span class="fragment fade-in">Log Monitor</span><br/>
+					<span class="fragment fade-in">Inspector</span><br/>
+					<span class="fragment fade-in">Crash Reporter</span><br/>
+				</section>
+
+				<section>
+					<u>Actions</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">Payloads of information</span><br/>
+					<span class="fragment fade-in">Send data from your application to your store</span><br/>
+					<span class="fragment fade-in">Only source of information for the store</span><br/>
+				</section>
+
+				<section>
+					<u>Reducers</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">Describe something that happened</span><br/>
+					<span class="fragment fade-in">Don't specify how</span><br/>
+					<span class="fragment fade-in">Are Pure, No side effects</span><br/>
+				</section>
+
+				<section>
+					<u>Store</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">Holds application state</span><br/>
+					<span class="fragment fade-in">Allows access to state</span><br/>
+					<span class="fragment fade-in">Allows state to be updated</span><br/>
+					<span class="fragment fade-in">Registers & unregisters listeners</span><br/>
+				</section>
+
+				<section>
+					<u>Advanced Usage</u>
+					<br/>
+					<br/>
+					<span class="fragment fade-in">Async Actions</span><br/>
+					<span class="fragment fade-in">Middleware</span><br/>
+					<span class="fragment fade-in">Use with Router</span><br/>
+					<span class="fragment fade-in">Server Rendering</span><br/>
+				</section>
+
+				<section>
+					<i class="fa fa-hand-spock-o fa-6" style="font-size:250px" aria-hidden="true"></i><br/><br/>
+					May your components live exactly till they unmount
+					<br/><br/>
+					<i class="fa fa-github-alt" aria-hidden="true"></i>/abilashk<br/>
+					<i class="fa fa-twitter" aria-hidden="true"></i>/abi1ity
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
