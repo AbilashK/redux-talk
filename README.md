@@ -1,1 +1,1 @@
-## A short introductory presentation about webpack
+## A short introductory presentation about redux
